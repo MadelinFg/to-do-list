@@ -1,0 +1,27 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.input-title {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.input-label {
+    line-height: 1em;
+}
+
+.input-component {
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    padding: 8px 4px;
+}
+
+.input-component:focus-visible {
+    outline: none;
+}
