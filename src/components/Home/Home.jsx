@@ -23,7 +23,11 @@ function Home({}) {
 
     const handleCompleteTask = () => {};
 
-    const handleDeleteTask = () => {};
+    const handleDeleteTask = (index) => {
+        const temp = [...pendingTasks];
+        temp.splice(index, 1);
+        setPendingTasks(temp);
+    };
 
     return (
         <div className="home">
@@ -45,24 +49,30 @@ function Home({}) {
             <ul className="in-process-container">
                 <h2 className="title-task-container">Tareas pendientes</h2>
 
-                {pendingTasks.map((task, index) => {
-                    return (
-                        <li key={index} className="task-element">
-                            <p>{task}</p>
+                {
+                    pendingTasks.length > 0 ? 
 
-                            <div className="actions-container">
-                                <Button
-                                    text="Completar"
-                                    onClick={() => handleCompleteTask(index)}
-                                />
-                                <Button
-                                    text="Eliminar"
-                                    onClick={() => handleDeleteTask(index)}
-                                />
-                            </div>
-                        </li>
-                    );
-                })}
+                    pendingTasks.map((task, index) => {
+                        return (
+                            <li key={index} className="task-element">
+                                <p>{task}</p>
+    
+                                <div className="actions-container">
+                                    <Button
+                                        text="Completar"
+                                        onClick={() => handleCompleteTask(index)}
+                                    />
+                                    <Button
+                                        text="Eliminar"
+                                        onClick={() => handleDeleteTask(index)}
+                                    />
+                                </div>
+                            </li>
+                        );
+                    })
+                    :
+                    <p>Aún no tienes tareas pendientes</p>
+                }
             </ul>
         </div>
     );
