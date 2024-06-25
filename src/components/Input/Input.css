@@ -1,7 +1,7 @@
 .input-container {
     display: flex;
     flex-direction: column;
-    margin: 15px 0;
+    margin: 0;
     width: 100%;
 }
 
@@ -20,6 +20,7 @@
     border: 1px solid var(--gray);
     border-radius: 8px;
     padding: 8px 4px;
+    max-width: 500px;
 }
 
 .input-component:focus-visible {

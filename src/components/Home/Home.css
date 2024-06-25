@@ -1,8 +1,41 @@
 .home {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 16px;
 }
 
 .home .title {
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.home .form-container {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.home .in-process-container {
+    border: 2px solid var(--gray);
+    border-radius: 10px;
+    padding: 16px 40px;
+    list-style: none;
+}
+
+.home .title-task-container {
+    margin-bottom: 20px;
+}
+
+.home .task-element, .home .task-element .actions-container {
+    display: flex;
+}
+
+.home .task-element {
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+.home .task-element .actions-container {
+    gap: 10px;
 }
