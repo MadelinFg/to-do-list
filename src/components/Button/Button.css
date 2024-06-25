@@ -1,0 +1,12 @@
+.button-container {
+    margin: 0;
+}
+
+.button {
+    background-color: var(--gray);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
