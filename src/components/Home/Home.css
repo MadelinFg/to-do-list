@@ -10,13 +10,14 @@
 }
 
 .home .form-container {
-    max-width: 700px;
-    margin: 0 auto 40px;
+    max-width: 650px;
+    margin: 0 0 40px;
     display: flex;
     align-items: flex-end;
 }
 
-.home .in-process-container {
+.home .tasks-container {
+    margin: 20px 0;
     border: 2px solid var(--gray);
     border-radius: 10px;
     padding: 16px 40px;
@@ -34,6 +35,12 @@
 .home .task-element {
     margin: 15px 0;
     justify-content: space-between;
+    align-items: center;
+}
+
+.home .task-element .task-txt-completed {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .home .task-element .actions-container {

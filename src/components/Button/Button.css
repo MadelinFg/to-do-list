@@ -9,4 +9,6 @@
     padding: 10px 20px;
     cursor: pointer;
     text-wrap: nowrap;
+    color: var(--white);
+    font-weight: 600;
 }
